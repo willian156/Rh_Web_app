@@ -12,22 +12,12 @@ namespace Rh_Web_app.Controllers
 {
     public class VagasController : Controller
     {
-        //Url inicial da API
-        string Baseurl = "https://localhost:44305/";
         public async Task<ActionResult> Index()
         {
             List<Vagas> VgaInfo = new List<Vagas>();
-            using (var client = new HttpClient())
-            {
-                //Passando a url base do serviço
-                client.BaseAddress = new Uri(Baseurl);
-                client.DefaultRequestHeaders.Clear();
-
-                //Definindo o data format do request
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                 //mandando o request para achar os recursos de GetVaga usando HttpClient
-                HttpResponseMessage Res = await client.GetAsync("api/Vagas");
+                HttpResponseMessage Res = await GlobalVariables.WebApiClient.GetAsync("api/Vagas");
 
                 //Checando a resposta se obteve sucesso ou não
                 if (Res.IsSuccessStatusCode)
