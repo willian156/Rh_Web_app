@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Rh_Web_app.Models.Vagas>
+
+@{
+    ViewData["Title"] = "index";
+
+}
+
+<h1>Vagas</h1>
+
+<p id="btn-primary">
+    <a asp-action="Create">Nova vaga</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                <p>Id da vaga</p>
+            </th>
+            <th>
+                <p>Nome da Vaga</p>
+            </th>
+            <th>
+                <p>Descrição</p>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_vaga)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NmVaga)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descricao)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Detalhes", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Deletar", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json'
+                }
+            });
+        });
+    </script>
+}

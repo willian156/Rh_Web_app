@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+
+
+//usar este script na página da tabela
+ @section Scripts{
+   
+     <script>
+         $(document).ready(function () {
+             $('#myTable').DataTable();
+         });
+     </script>
+  }
