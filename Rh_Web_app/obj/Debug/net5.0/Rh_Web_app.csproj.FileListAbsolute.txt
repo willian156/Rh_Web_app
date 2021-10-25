@@ -27,7 +27,6 @@ D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Home\Index.cshtm
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Rh_Web_app.RazorTargetAssemblyInfo.cache
@@ -118,3 +117,10 @@ D:\C# testes\Rh_Web_app\Rh_Web_app\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalys
 D:\C# testes\Rh_Web_app\Rh_Web_app\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\C# testes\Rh_Web_app\Rh_Web_app\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Vagas\index.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\bin\Debug\net5.0\bundleconfig.json
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Pages\_Layout.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Vagas\Create.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Vagas\Edit.cshtml.g.cs

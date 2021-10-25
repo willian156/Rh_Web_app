@@ -7,22 +7,22 @@
 
 <h1>Vagas</h1>
 
-<p id="btn-primary">
-    <a asp-action="Create">Nova vaga</a>
+<p id="btn btn-primary">
+    <a asp-action="Create" class="btn btn-primary"><i class="fas fa-folder-plus"></i>Nova vaga</a>
 </p>
 <table id="myTable" class="table">
-    <thead>
+    <thead class="table-heading">
         <tr>
             <th>
-                <p>Id da vaga</p>
+                Id da vaga
             </th>
             <th>
-                <p>Nome da Vaga</p>
+                Nome da Vaga
             </th>
             <th>
-                <p>Descrição</p>
+               Descrição
             </th>
-            <th></th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -39,9 +39,9 @@
                     @Html.DisplayFor(modelItem => item.Descricao)
                 </td>
                 <td>
-                    @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Detalhes", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Deletar", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("Editar", "Create", new {id=item.id_vaga}) |
+                    @Html.ActionLink("Detalhes", "Details", new { id = item.id_vaga }) |
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.id_vaga })
                 </td>
             </tr>
         }
