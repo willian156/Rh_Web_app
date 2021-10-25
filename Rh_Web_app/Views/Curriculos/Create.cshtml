@@ -1,0 +1,45 @@
+﻿@model Rh_Web_app.Models.Curriculos
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Curriculos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="id_curriculo" class="control-label"></label>
+                <input asp-for="id_curriculo" class="form-control" />
+                <span asp-validation-for="id_curriculo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nmPessoa" class="control-label"></label>
+                <input asp-for="nmPessoa" class="form-control" />
+                <span asp-validation-for="nmPessoa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PessDescricao" class="control-label"></label>
+                <input asp-for="PessDescricao" class="form-control" />
+                <span asp-validation-for="PessDescricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="id_Conhecimentos" class="control-label"></label>
+                <input asp-for="id_Conhecimentos" class="form-control" />
+                <span asp-validation-for="id_Conhecimentos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

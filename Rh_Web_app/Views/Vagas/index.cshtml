@@ -8,10 +8,10 @@
 <h1>Vagas</h1>
 
 <p id="btn btn-primary">
-    <a asp-action="Create" class="btn btn-primary"><i class="fas fa-folder-plus"></i>Nova vaga</a>
+    <a asp-action="Create" class="btn btn-primary"><i class="fas fa-folder-plus"></i> Nova vaga</a>
 </p>
 <table id="myTable" class="table">
-    <thead class="table-heading">
+    <thead>
         <tr>
             <th>
                 Id da vaga
@@ -39,12 +39,12 @@
                     @Html.DisplayFor(modelItem => item.Descricao)
                 </td>
                 <td>
-                    @Html.ActionLink("Editar", "Create", new {id=item.id_vaga}) |
-                    @Html.ActionLink("Detalhes", "Details", new { id = item.id_vaga }) |
-                    @Html.ActionLink("Deletar", "Delete", new { id = item.id_vaga })
-                </td>
-            </tr>
-        }
+                    <i class="fas fa-edit"></i> @Html.ActionLink("Editar", "Edit", new { id = item.id_vaga }) |
+                    <i class="fas fa-eye"></i> @Html.ActionLink("Detalhes", "Details", new { id = item.id_vaga }) |
+                    <i class="fas fa-trash"></i> @Html.ActionLink("Deletar", "Delete", new { id = item.id_vaga })
+                </td >
+            </tr >
+}
     </tbody>
 </table>
 

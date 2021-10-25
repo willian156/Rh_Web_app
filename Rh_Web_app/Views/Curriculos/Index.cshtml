@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Rh_Web_app.Models.Curriculos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Curriculos</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary"><i class="fas fa-folder-plus"></i> Novo Curriculo</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                Id do curriculo
+            </th>
+            <th>
+                Nome da pessoa
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_curriculo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nmPessoa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PessDescricao)
+                </td>
+                <td>           
+                    <i class="fas fa-edit"></i> @Html.ActionLink("Edit", "Edit", new { id = item.id_curriculo })
+                    <i class="fas fa-eye"></i> @Html.ActionLink("Details", "Details", new { id = item.id_curriculo })
+                    <i class="fas fa-trash"></i> @Html.ActionLink("Delete", "Delete", new { id = item.id_curriculo })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json'
+                }
+            });
+        });
+    </script>
+}

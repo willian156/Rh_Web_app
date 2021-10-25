@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Rh_Web_app.Models.Conhecimentos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary"><i class="fas fa-folder-plus"></i> Novo conhecimento</a>
+</p>
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_Conhecimentos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nmConhecimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.conDescricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_Conhecimentos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nmConhecimento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.conDescricao)
+                </td>
+                <td>
+                    <i class="fas fa-edit"></i> @Html.ActionLink("Edit", "Edit", new { id = item.id_Conhecimentos }) |
+                    <i class="fas fa-eye"></i> @Html.ActionLink("Details", "Details", new { id = item.id_Conhecimentos }) |
+                    <i class="fas fa-trash"></i> @Html.ActionLink("Delete", "Delete", new { id = item.id_Conhecimentos })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json'
+                }
+            });
+        });
+    </script>
+}

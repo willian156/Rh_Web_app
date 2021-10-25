@@ -124,3 +124,12 @@ D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Pages\_ViewImports.csh
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Vagas\Create.cshtml.g.cs
 D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Vagas\Edit.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Vagas\Details.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Curriculos\Index.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Curriculos\Details.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Curriculos\Create.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Curriculos\Edit.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Conhecimentos\Index.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Conhecimentos\Create.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Conhecimentos\Details.cshtml.g.cs
+D:\C# testes\Rh_Web_app\Rh_Web_app\obj\Debug\net5.0\Razor\Views\Conhecimentos\Edit.cshtml.g.cs
